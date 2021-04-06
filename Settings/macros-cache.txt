@@ -1,0 +1,31 @@
+MACRO 9 "FH" Spell_Holy_FlashHeal
+/run a=GetMouseOver(1) TargetUnit(a) CastSpellByName("Flash Heal")
+END
+MACRO 6 "H" Spell_Holy_Heal
+/run a=GetMouseOver(1) TargetUnit(a) CastSpellByName("Heal")
+END
+MACRO 3 "LHeal" Spell_Holy_LesserHeal
+/cmcast Lesser Heal
+END
+MACRO 4 "Mining" Ability_CheapShot
+/run if n~= 1 then CastSpellByName("Find Herbs") n=1 else CastSpellByName("Find Minerals") n=0 ;end
+END
+MACRO 8 "Pet" Ability_BullRush
+/script PetAttack(target)
+END
+MACRO 5 "R" Spell_Holy_Renew
+/run a=GetMouseOver(1) TargetUnit(a) CastSpellByName("Renew")
+END
+MACRO 1 "Renew" Spell_Holy_Renew
+/cmcast Renew
+END
+MACRO 7 "S" Spell_Holy_PowerWordShield
+/run a=GetMouseOver(1) TargetUnit(a) CastSpellByName("Power Word: Shield")
+END
+MACRO 2 "Shield" Spell_Holy_PowerWordShield
+/cmcast Power Word: Shield
+END
+MACRO 10 "Summon" Spell_Shadow_Twilight
+Summoning  >>>  %t  <<<
+/cast Ritual of Summoning
+END
