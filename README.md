@@ -13,3 +13,9 @@ the file locations are:
 
 C:\WoW\WTF\Account\MYACCOUNT\ServerName\Mytoon\SavedVariables\Gatherer.lua
 C:\WoW\WTF\Account\MYACCOUNT\ServerName\Mytoon\SavedVariables\MapNotes.lua
+
+C:\WoW\WTF\Account\MYACCOUNT\SavedVariables.lua
+C:\WoW\WTF\Account\MYACCOUNT\bindings-cache.wtf
+C:\WoW\WTF\Account\MYACCOUNT\macros-cache.wtf
+
+C:\WoW\WTF\Account\MYACCOUNT\ServerName\Mytoon\chat-cache.txt
