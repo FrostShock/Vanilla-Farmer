@@ -9,6 +9,9 @@ The "bindings-cache.wtf" contains a very good choice of key bindings.
 
 Make sure to install MapNotes and Gatherer addons
 
+https://legacy-wow.com/vanilla-addons/mapnotes/
+Gatherer 2.2.3.1 – get it from https://github.com/crazypoultry/addons
+
 the file locations are:
 
 C:\WoW\WTF\Account\MYACCOUNT\ServerName\Mytoon\SavedVariables\Gatherer.lua
