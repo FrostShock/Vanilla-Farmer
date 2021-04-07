@@ -22,3 +22,8 @@ C:\WoW\WTF\Account\MYACCOUNT\bindings-cache.wtf<br>
 C:\WoW\WTF\Account\MYACCOUNT\macros-cache.wtf
 
 C:\WoW\WTF\Account\MYACCOUNT\ServerName\Mytoon\chat-cache.txt
+
+More links:
+
+https://cutt.ly/ungoro  =  https://vanillawow.home.blog/2021/03/24/farming-in-ungoro/<br>
+https://cutt.ly/vchest  =  https://vanillawow.home.blog/2021/03/26/all-treasure-chests-in-vanilla-wow/
