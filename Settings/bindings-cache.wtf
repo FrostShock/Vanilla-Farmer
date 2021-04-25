@@ -3,25 +3,31 @@
 -- X = Pet Attack
 -- Y = Attack
 -- 
--- Ctrl + K  =  Skills
--- Ctrl + H  =  Honor
--- Ctrl + N  =  Talents
+-- Ctrl + K  =  Skill Pane
+-- Ctrl + H  =  Honor Pane
+-- Ctrl + N  =  Talent Pane
+-- 
 -- Ctrl + R  =  Chat Reply
 -- Ctrl + F  =  Follow Target
 -- Ctrl + X  =  Toggle Sit/Stand
 -- 
--- Shift + R  =  Show Framerate
--- Shift + C  =  Pet
--- Shift + P  =  Pet spell book
+-- Shift + R  =  Framerate Display
+-- Shift + C  =  Pet Pane
+-- Shift + P  =  Pet Book
 -- Shift + Z  =  Sheath Weapon
 -- 
 -- Alt + P  =  Flip Camera
 -- Alt + Z  =  RingMenu
 -- 
 -- Ctrl + Alt + Z  =  Toggle User Interface
+-- Ctrl + Shift + P  =  Toggle Minimap
+
 
 -- File location:
 -- C:\WoW\WTF\Account\MYACCOUNT\bindings-cache.wtf
+
+
+-- The default WoW hotkeys are listed here - https://frostshock.github.io/wabc/index.html#hotkeys.html
 
 
 bind BUTTON3 MOVEANDSTEER
@@ -98,10 +104,7 @@ bind CTRL-TAB TARGETNEARESTFRIEND
 bind CTRL-SHIFT-TAB TARGETPREVIOUSFRIEND
 bind F1 TARGETSELF
 bind SHIFT-F1 TARGETPET
-bind F2 ACTIONBUTTON10
-bind F3 ACTIONBUTTON11
-bind F4 ACTIONBUTTON12
-bind F5 TARGETPARTYMEMBER4
+bind F5 MULTIACTIONBAR3BUTTON5
 bind SHIFT-F2 TARGETPARTYPET1
 bind SHIFT-F3 TARGETPARTYPET2
 bind SHIFT-F4 TARGETPARTYPET3
@@ -114,11 +117,11 @@ bind CTRL-V ALLNAMEPLATES
 bind SHIFT-T MULTIACTIONBAR4BUTTON5
 bind C TOGGLECHARACTER0
 bind B TOGGLEBACKPACK
-bind F12 TOGGLEBACKPACK
-bind F8 TOGGLEBAG1
-bind F9 TOGGLEBAG2
-bind F10 TOGGLEBAG3
-bind F11 TOGGLEBAG4
+bind F12 MULTIACTIONBAR3BUTTON12
+bind F8 MULTIACTIONBAR3BUTTON8
+bind F9 MULTIACTIONBAR3BUTTON9
+bind F10 MULTIACTIONBAR3BUTTON10
+bind F11 MULTIACTIONBAR3BUTTON11
 bind SHIFT-B OPENALLBAGS
 bind P TOGGLESPELLBOOK
 bind SHIFT-SPACE TOGGLEWORLDSTATESCORES
@@ -194,7 +197,6 @@ bind I MULTIACTIONBAR2BUTTON6
 bind Z MULTIACTIONBAR4BUTTON12
 bind T MULTIACTIONBAR2BUTTON4
 bind CTRL-SHIFT-P TOGGLEMINIMAP
-bind 0 ACTIONBUTTON10
 bind \ MULTIACTIONBAR4BUTTON11
 bind NUMPAD7 STRAFELEFT
 bind MOUSEWHEELUP CAMERAZOOMIN
@@ -206,3 +208,9 @@ bind CTRL-SHIFT-R REPLY2
 bind CTRL-K TOGGLECHARACTER1
 bind J MULTIACTIONBAR3BUTTON2
 bind K MULTIACTIONBAR3BUTTON3
+bind F7 MULTIACTIONBAR3BUTTON7
+bind F6 MULTIACTIONBAR3BUTTON6
+bind 0 ACTIONBUTTON10
+bind F2 ACTIONBUTTON11
+bind F3 ACTIONBUTTON12
+bind F4 MULTIACTIONBAR3BUTTON4
