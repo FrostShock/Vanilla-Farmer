@@ -1,3 +1,6 @@
+rem  This script will copy the chat-cache.txt file to every character you have on the server.
+rem  you have to copy this script and the "chat-cache.txt" file into the folder C:\WoW\WTF\Account\MYACCOUNT and then to run this script
+
 ls -l | grep "^d" | grep -v SavedVariables | sed -e "s/.*:[^ ]* //" > 01-realm.txt
 set /p server=<01-realm.txt
 
