@@ -12,3 +12,5 @@ cat 01-toons.txt | sed -e "s/\(.*\)/copy chat-cache.txt \x22%server%\\\1\x22/" >
 echo pause>>02-copy-chat-settings.bat
 
 call 02-copy-chat-settings.bat
+
+del 01-realm.txt 01-toons.txt 02-copy-chat-settings.bat
