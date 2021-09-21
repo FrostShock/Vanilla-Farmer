@@ -1,31 +1,38 @@
-MACRO 9 "FH" Spell_Holy_FlashHeal
-/run a=GetMouseOver(1) TargetUnit(a) CastSpellByName("Flash Heal")
+MACRO 1 "/Played" Ability_Creature_Cursed_01
+/played
 END
-MACRO 6 "H" Spell_Holy_Heal
-/run a=GetMouseOver(1) TargetUnit(a) CastSpellByName("Heal")
+MACRO 2 "Camp" Spell_Holy_Renew
+/camp 
+/script ResetInstances();
 END
-MACRO 3 "LHeal" Spell_Holy_LesserHeal
-/cmcast Lesser Heal
+MACRO 3 "Colors" Ability_Creature_Cursed_03
+/script DEFAULT_CHAT_FRAME:AddMessage("WTS \124cff777777\124Hitem:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0\124h[Calico Mount]\124h\124r");
 END
-MACRO 4 "Mining" Ability_CheapShot
-/run if n~= 1 then CastSpellByName("Find Herbs") n=1 else CastSpellByName("Find Minerals") n=0 ;end
+MACRO 4 "Info 1" Ability_Creature_Cursed_04
+|cff0070dd|Hitem:18335:0:0:0|h[Pristine Black Diamond]|h|r is for |cff1eff00|Hitem:18331:0:0:0|h[Arcanum of Protection]|h|r|cff1eff00|Hitem:18329:0:0:0|h[Arcanum of Rapidity]|h|r|cff1eff00|Hitem:18330:0:0:0|h[Arcanum of Focus]|h|r
 END
-MACRO 8 "Pet" Ability_BullRush
-/script PetAttack(target)
+MACRO 5 "Info 2" Ability_Creature_Cursed_04
+|cff1eff00|Hitem:12735:0:0:0|h[Frayed Abomination Stitching]|h|r x 1 = |cff1eff00|Hitem:18331:0:0:0|h[Arcanum of Protection]|h|r
 END
-MACRO 5 "R" Spell_Holy_Renew
-/run a=GetMouseOver(1) TargetUnit(a) CastSpellByName("Renew")
+MACRO 6 "Info 3" Ability_Creature_Cursed_04
+|cffffffff|Hitem:12753:0:0:0|h[Skin of Shadow]|h|r x 2 = |cff1eff00|Hitem:18330:0:0:0|h[Arcanum of Focus]|h|r
 END
-MACRO 1 "Renew" Spell_Holy_Renew
-/cmcast Renew
+MACRO 7 "Info 4" Ability_Creature_Cursed_04
+|cffffffff|Hitem:12938:0:0:0|h[Blood of Heroes]|h|r x 2 = |cff1eff00|Hitem:18329:0:0:0|h[Arcanum of Rapidity]|h|r
 END
-MACRO 7 "S" Spell_Holy_PowerWordShield
-/run a=GetMouseOver(1) TargetUnit(a) CastSpellByName("Power Word: Shield")
+MACRO 8 "Info 5" Ability_Creature_Cursed_04
+|cffffffff|Hitem:11753:0:0:0|h[Eye of Kajal]|h|r = |cff1eff00|Hitem:11643:0:0:0|h[Lesser Arcanum of Tenacity]|h|r
 END
-MACRO 2 "Shield" Spell_Holy_PowerWordShield
-/cmcast Power Word: Shield
+MACRO 9 "Info 6" Ability_Creature_Cursed_04
+|cffffffff|Hitem:11751:0:0:0|h[Burning Essence]|h|r = |cff1eff00|Hitem:11644:0:0:0|h[Lesser Arcanum of Resilience]|h|r
 END
-MACRO 10 "Summon" Spell_Shadow_Twilight
+MACRO 10 "Info 7" Ability_Creature_Cursed_04
+|cffffffff|Hitem:11752:0:0:0|h[Black Blood of the Tormented]|h|r = |cff1eff00|Hitem:11622:0:0:0|h[Lesser Arcanum of Rumination]|h|r
+END
+MACRO 11 "Summon" Spell_Shadow_Twilight
 Summoning  >>>  %t  <<<
 /cast Ritual of Summoning
+END
+MACRO 12 "Pet" Ability_BullRush
+/script PetAttack(target)
 END
