@@ -252,10 +252,21 @@ bind \ MULTIACTIONBAR4BUTTON11
 bind Z MULTIACTIONBAR4BUTTON12
 
 --  Addons
+
+---  Addon - RingMenu
 bind ALT-Z RINGMENU_TOGGLE
-bind ALT-CTRL-A TOGGLEGATHER
+
+---  Addon - LazyPig
+bind ALT-CTRL-A FINDHERBSMINERALS
+
+---  Addon - ToggleGather
+-- bind ALT-CTRL-A TOGGLEGATHER
+
+---  Addon - Chat Keys
 bind ALT-I SAYMESSAGE
 bind ALT-O PARTYMESSAGE
+
+---  Addon - BuffWatch
 bind CTRL-L Toggle BuffWatch
 
 --  Hidden hotkeys
