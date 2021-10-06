@@ -29,10 +29,29 @@ END
 MACRO 10 "Info 7" Ability_Creature_Cursed_04
 |cffffffff|Hitem:11752:0:0:0|h[Black Blood of the Tormented]|h|r = |cff1eff00|Hitem:11622:0:0:0|h[Lesser Arcanum of Rumination]|h|r
 END
-MACRO 11 "Summon" Spell_Shadow_Twilight
+MACRO 11 "Info 81" Ability_Creature_Cursed_04
+|cff0070dd|Hitem:12607:0:0:0|h[Brilliant Chromatic Scale]|h|r = |cffa335ee|Hitem:12895:0:0:0|h[Breastplate of the Chromatic Flight]|h|r / |cffa335ee|Hitem:12945:0:0:0|h[Legplates of the Chromatic Defier]|h|r / 
+END
+MACRO 12 "Info 82" Ability_Creature_Cursed_04
+ / |cffa335ee|Hitem:12903:0:0:0|h[Legguards of the Chromatic Defier]|h|r
+END
+MACRO 13 "Summon" Spell_Shadow_Twilight
 Summoning  >>>  %t  <<<
 /cast Ritual of Summoning
 END
-MACRO 12 "Pet" Ability_BullRush
+MACRO 14 "Pet" Ability_BullRush
 /script PetAttack(target)
+END
+MACRO 15 "Minerals" Spell_Nature_Earthquake
+/cast Find Minerals
+END
+MACRO 16 "Herbs" INV_Misc_Flower_02
+/cast Find Herbs
+END
+MACRO 17 "Blink" Spell_Arcane_Blink 
+/script SpellStopCasting()
+/cast Blink
+END
+MACRO 18 "Icons" Ability_Creature_Disease_02
+/run local l=0;for l=1,120 do local t=GetActionText(l);local x=GetActionTexture(l);if x then local m="Slot "..l..": ["..x.."]";if t then m=m.." \""..t.."\"";end DEFAULT_CHAT_FRAME:AddMessage(m);end end
 END
