@@ -1,0 +1,40 @@
+MACRO 1 "Herbs" INV_Misc_Flower_02
+/cast Find Herbs
+END
+MACRO 2 "Minerals" Spell_Nature_Earthquake
+/cast Find Minerals
+END
+MACRO 3 "Pet" Ability_BullRush
+/script PetAttack(target)
+END
+MACRO 4 "Summon" Spell_Shadow_Twilight
+Summoning  >>>  %t  <<<
+/cast Ritual of Summoning
+END
+MACRO 5 "Polymorph" Spell_Nature_Polymorph
+/script SpellStopCasting()
+/run CastSpellByName("Polymorph")
+END
+MACRO 6 "Blink" Spell_Arcane_Blink
+/script SpellStopCasting()
+/cast Blink
+END
+MACRO 7 "Resurrection" Spell_Holy_DivineSpirit
+/y Resurrecting %t
+/cast Resurrection
+END
+MACRO 8 "Redemption" Spell_Holy_Resurrection
+/y Resurrecting %t
+/cast Redemption
+END
+MACRO 9 "Rebirth" Spell_Nature_Reincarnation
+/y Resurrecting %t
+/cast Rebirth
+END
+MACRO 10 "Ancestral Spirit" Spell_Nature_LightningBolt
+/y Resurrecting %t
+/cast Ancestral Spirit
+END
+MACRO 11 "Icons" Ability_Creature_Disease_02
+/run local l=0;for l=1,120 do local t=GetActionText(l);local x=GetActionTexture(l);if x then local m="Slot "..l..": ["..x.."]";if t then m=m.." \""..t.."\"";end DEFAULT_CHAT_FRAME:AddMessage(m);end end
+END
